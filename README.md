@@ -4,7 +4,7 @@ This repo contains raw data and codes to construct a gender classifier based on 
 # Folders
 ## clf
 
-In [clf]() folder, you will find the data used to train and test the model and the R code with four classifications with their hyperparameter tunning using cv with three folds. 
+In [clf](https://github.com/DavidSolan0/gender_name_clf/tree/main/clf) folder, you will find the data used to train and test the model and the R code with four classifications with their hyperparameter tunning using cv with three folds. 
 
 The preprocessing only includes lowercase and remove punctuation from text. I used glove embeddings from the [textdata](https://cran.r-project.org/web/packages/textdata/textdata.pdf) package. Based on metrics, I picked a SVM as the best classifier. The **AUC** from my model is equal to 0.84 with an **accuracy** of 0.8. Below you could take a look to the ROC CURVE.
 
