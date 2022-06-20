@@ -19,3 +19,5 @@ This folder includes the UI and server codes to deploy a [shinyApp](https://davi
 # Discussion
 
 Future work could include trying different length embeddings, and other classifiers. 
+
+# DATA WAS TAKEN OF [HERE](https://github.com/vijayanandrp/ML-001-Name-Text-Gender-Predictor-Classifier)
