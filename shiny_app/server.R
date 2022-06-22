@@ -9,8 +9,10 @@ library(textrecipes)
 library(shinydashboard)
 library(shinydashboardPlus)
 
+
 server = function(input, output) {
- 
+  
+  source('./utils.R')
   clf = readRDS('./gender_name_clf.rds')
   
   clf_gender <- reactive({
@@ -33,12 +35,7 @@ server = function(input, output) {
       df = sav_file
       }
     
-    df = as_tibble(df)  
-    predictions = predict(clf, new_data = df, type = 'prob')[,1] 
-    predictions = ifelse(predictions > 0.5, 'F', 'M')
-    df$gender_prediction = predictions
-    
-    df
+    make_predictions(df, clf)
   
   })
   
