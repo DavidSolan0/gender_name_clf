@@ -14,7 +14,7 @@ It is worth mentioning that the XGB classifier has similar metrics **AUC** equal
 
 ## shiny_app 
 
-This folder includes the UI and server codes to deploy a [shinyApp](https://david-solan0.shinyapps.io/shiny_app/?_ga=2.44617639.288317254.1655696939-1777886789.1650917161) with the model. Remember that you have to save the model as a .rds file and save it in this folder for work on your machine.   
+This folder includes the UI and server codes to deploy a [shinyApp](https://jesus-david-solano-velasquez.shinyapps.io/gender_clf/?_ga=2.201222828.386005804.1664982007-1523287873.1664376812) with the model. Remember that you have to save the model as a .rds file and save it in this folder for work on your machine.   
 
 # Discussion
 
