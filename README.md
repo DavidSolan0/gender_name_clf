@@ -6,7 +6,7 @@ This repo contains raw data and codes to construct a gender classifier based on 
 
 In [clf](https://github.com/DavidSolan0/gender_name_clf/tree/main/clf) folder, you will find the data used to train and test the model and the R code with four classifications with their hyperparameter tunning using cv with three folds. 
 
-The preprocessing only includes lowercase and remove punctuation from text. I used glove embeddings from the [textdata](https://cran.r-project.org/web/packages/textdata/textdata.pdf) package. Based on metrics, I picked a SVM as the best classifier. The **AUC** from my model is equal to 0.84 with an **accuracy** of 0.8. Below you could take a look to the ROC CURVE.
+The preprocessing only includes lowercase and removes punctuation from the text. I used glove embeddings from the[textdata](https://cran.r-project.org/web/packages/textdata/textdata.pdf) package. Based on metrics, I picked an SVM as the best classifier. The **AUC** from my model is equal to 0.84 with an accuracy of 0.8. Below you can take a look at the ROC curve.
 
 ![image](https://user-images.githubusercontent.com/80591909/174524685-4da305ab-c372-4629-8a12-86f9200a607a.png)
 
@@ -14,10 +14,10 @@ It is worth mentioning that the XGB classifier has similar metrics **AUC** equal
 
 ## shiny_app 
 
-This folder includes the UI and server codes to deploy a [shinyApp](https://david-solan0.shinyapps.io/shiny_app/?_ga=2.44617639.288317254.1655696939-1777886789.1650917161) with the model. Keep in mind you have to save the model as a .rds file and save it in this folder for work on your machine.  
+This folder includes the UI and server codes to deploy a [shinyApp](https://david-solan0.shinyapps.io/shiny_app/?_ga=2.44617639.288317254.1655696939-1777886789.1650917161) with the model. Remember that you have to save the model as a .rds file and save it in this folder for work on your machine.   
 
 # Discussion
 
-Future work could include trying different length embeddings, and other classifiers. 
+Future work could include trying different length embeddings and other classifiers. 
 
 # DATA WAS TAKEN FROM [HERE](https://github.com/vijayanandrp/ML-001-Name-Text-Gender-Predictor-Classifier)
